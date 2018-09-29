@@ -42,5 +42,48 @@ regressor.fit(X_train,y_train)
 y_pred=regressor.predict(X_test)
 
 
+# backword emimination
 
+import statsmodels.formula.api as sm
+X=np.append(np.ones((50,1)).astype(int),values=X,axis=1)                        # To add ones before X Array and axis =1 for column , x=0 for raw
+
+X_opt=X[:,[0,1,2,3,4,5]]                                                        # Step-1 of BE
+
+regressor_OLS=sm.OLS(endog=y,exog=X_opt).fit()                                  # Step-2 of BE
+
+regressor_OLS.summary()                                                         # Step-3 of BE
+
+## As we got X2 as highesr , need to remove
+
+X_opt=X[:,[0,1,3,4,5]]                                                          # Step-1 of BE
+
+regressor_OLS=sm.OLS(endog=y,exog=X_opt).fit()                                  # Step-2 of BE
+
+regressor_OLS.summary()                                                         # Step-3 of BE
+
+# Need to remove X1 now
+
+X_opt=X[:,[0,3,4,5]]                                                            # Step-1 of BE
+
+regressor_OLS=sm.OLS(endog=y,exog=X_opt).fit()                                  # Step-2 of BE
+
+regressor_OLS.summary()                                                         # Step-3 of BE
+
+# X4 need to remove now
+
+X_opt=X[:,[0,3,5]]                                                              # Step-1 of BE
+
+regressor_OLS=sm.OLS(endog=y,exog=X_opt).fit()                                  # Step-2 of BE
+
+regressor_OLS.summary()                                                         # Step-3 of BE
+
+# Remove X5 so need to remove as it has 0.060 = 6%
+
+X_opt=X[:,[0,3]]                                                                 # Step-1 of BE
+
+regressor_OLS=sm.OLS(endog=y,exog=X_opt).fit()                                  # Step-2 of BE
+
+regressor_OLS.summary()                                                         # Step-3 of BE
+
+# Now will get all IDV creates impact on prediction
 
