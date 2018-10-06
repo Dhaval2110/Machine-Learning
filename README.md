@@ -8,5 +8,6 @@ IMP Links :
 4) https://docs.scipy.org/doc/numpy/reference/
 5) https://matplotlib.org/api/pyplot_api.html
 6) https://opencv-python-tutroals.readthedocs.io/en/latest/index.html
+7) https://mlkernels.readthedocs.io/en/latest/kernels.html
 
 Book To Refer : McGrawHill - Machine Learning -Tom Mitchell
