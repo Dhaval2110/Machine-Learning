@@ -9,5 +9,7 @@ IMP Links :
 5) https://matplotlib.org/api/pyplot_api.html
 6) https://opencv-python-tutroals.readthedocs.io/en/latest/index.html
 7) https://mlkernels.readthedocs.io/en/latest/kernels.html
+8) http://www.deeplearningbook.org/
+
 
 Book To Refer : McGrawHill - Machine Learning -Tom Mitchell
