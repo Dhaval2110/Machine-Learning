@@ -15,6 +15,9 @@ If the pixels in the bounding boxes have varying colors though, this method won'
 region = image[45:70, 150:250]
 
 b, g, r = np.mean(region, axis=(0, 1))
+
+
+INPUTS: https://stackoverflow.com/questions/53304188/how-to-find-rgb-value-of-a-bounded-region-in-an-image-using-python/53305160#53305160
 """
 
 
