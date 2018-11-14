@@ -18,6 +18,7 @@ b, g, r = np.mean(region, axis=(0, 1))
 
 
 INPUTS: https://stackoverflow.com/questions/53304188/how-to-find-rgb-value-of-a-bounded-region-in-an-image-using-python/53305160#53305160
+http://marksolters.com/programming/2015/02/27/rgb-histograph.html
 """
 
 
