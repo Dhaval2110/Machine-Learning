@@ -84,7 +84,7 @@ engine.setProperty('rate', rate - 25)
 # Create lists with your preset questions answers.The more the lists the better.
 #  But too many lists can slowdown the chat bot.
 greetings = ['hey there', 'hello', 'hi', 'Hai', 'hey!', 'hey']
-question = ['How are you?', 'How are you doing?']
+question = ['How are you?', 'How are you doing?', 'How is going on']
 responses = ['Okay', "I'm fine"]
 var1 = ['who made you', 'who created you']
 var2 = ['I_was_created_by_Edward_right_in_his_computer.', 'Edward',
@@ -131,7 +131,7 @@ while True:
             engine.say('I did not get that. Rerun the code')
             engine.runAndWait()
 
-#Use a loop code with random and Wikipedia to finish the code.
+# Use a loop code with random and Wikipedia to finish the code.
 # We are going to use the above mentioned modules in a loop code to create
 # the main functional code.
 
@@ -141,9 +141,9 @@ while True:
         engine.say(random_greeting)
         engine.runAndWait()
     elif r.recognize_google(audio) in question:
-        engine.say('I am doing great')
+        engine.say('I am fine')
         engine.runAndWait()
-        print('I am doing great')
+        print('I am fine')
     elif r.recognize_google(audio) in var1:
         engine.say('I was made by edward')
         engine.runAndWait()
