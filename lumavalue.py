@@ -34,3 +34,13 @@ for filename in os.listdir(os.getcwd()):                          # List out all
 	with open('out.txt', 'w') as f:
 			print(luma, filename,file=f)
 		
+'''
+Try this too:
+os.chdir(r'C:\Users\DHAVAL\Desktop\Luma4')
+for filename in os.listdir(os.getcwd()):
+	imag = Image.open(filename,'r')
+	pix_val = list(imag.getdata())
+	pix_val_flat = [x for sets in pix_val for x in sets]
+	avg=mean(pix_val_flat)
+	print(avg)
+'''
