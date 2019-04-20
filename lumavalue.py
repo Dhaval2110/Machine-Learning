@@ -1,4 +1,12 @@
 # Luma value calculation in python
+'''
+References : 
+https://www.codementor.io/innat_2k14/image-data-analysis-using-numpy-opencv-part-1-kfadbafx6
+https://stackoverflow.com/questions/6442118/python-measuring-pixel-brightness
+https://www.hackerearth.com/practice/notes/extracting-pixel-values-of-an-image-in-python/
+https://stackoverflow.com/questions/43111029/how-to-find-the-average-colour-of-an-image-in-python-with-opencv
+'''
+
 
 # Global Imports
 import os
