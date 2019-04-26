@@ -51,4 +51,13 @@ for filename in os.listdir(os.getcwd()):
 	pix_val_flat = [x for sets in pix_val for x in sets]
 	avg=mean(pix_val_flat)
 	print(avg)
+	
+	replace with dictionary and then 
+
+import os
+import pandas as pd
+dataset = pd.read_csv("dhaval.csv")
+x=dataset.iloc[0: , 0]
+x=list(x)
+print(x)
 '''
